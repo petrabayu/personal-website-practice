@@ -1,0 +1,520 @@
+/* ------------------------⬇⬇ UNIVERSAL ⬇⬇------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #f2ff93;
+  --secondary-color: #222;
+  --body-color: #e8e8e8;
+  --neutral-color: #f8f8f8;
+  --light-color: #fff;
+  --big-border-radius: 12px;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-color);
+  font-family: "Noto Sans NKo Unjoined", sans-serif;
+  color: var(--secondary-color);
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+li {
+  list-style-type: none;
+}
+
+#main-container {
+  position: relative;
+  background-color: var(--light-color);
+  border-radius: var(--big-border-radius);
+  margin: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+#content-container {
+  position: relative;
+  max-width: 100%;
+  margin: 1rem;
+}
+/* ------------------------⬆⬆ UNIVERSAL ⬆⬆------------------------ */
+
+/* ---------------------⬇⬇ NAVBAR SECTION ⬇⬇--------------------- */
+#navbar {
+  position: relative;
+}
+
+#navbar .navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar .navbar-wrapper #logo {
+  display: block;
+  text-align: center;
+}
+#navbar .navbar-wrapper .navbar-container a {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+#navbar .navbar-wrapper .navbar-container #list-pages {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#navbar .navbar-wrapper .navbar-container #list-pages .page {
+  display: inline-block;
+  margin: 0 3rem;
+  border-radius: 6px;
+}
+#navbar .navbar-wrapper .navbar-container #list-pages .page:hover {
+  background-color: var(--body-color);
+}
+
+#navbar .navbar-wrapper .navbar-container .btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 190px;
+  height: 57px;
+  color: #222;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden;
+}
+#navbar .navbar-wrapper .navbar-container .btn:hover {
+  font-size: 0px;
+}
+#navbar .navbar-wrapper .navbar-container .btn:hover::after {
+  transition: all 0.3s;
+  content: attr(hover);
+  font-size: 24px;
+}
+#navbar .navbar-wrapper .navbar-container .btn:hover {
+  background-color: #2ab13f;
+}
+/* ---------------------⬆⬆ NAVBAR SECTION ⬆⬆--------------------- */
+
+/* ---------------------⬇⬇ HERO SECTION ⬇⬇--------------------- */
+#hero {
+  position: relative;
+}
+#hero .hero-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#hero .hero-wrapper .hero-container {
+  position: relative;
+  margin-top: 32px;
+  height: 480px;
+}
+#hero .hero-wrapper .hero-container:first-child {
+  position: relative;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  flex-basis: 40%;
+  margin-right: 8px;
+}
+#hero .hero-wrapper .hero-container:last-child {
+  border-radius: 6px;
+  flex-basis: 60%;
+  margin-left: 8px;
+}
+
+#hero .hero-wrapper .hero-container .content {
+  position: absolute;
+  bottom: 0;
+  margin: 2rem;
+  overflow: hidden;
+  width: 90%;
+}
+#hero .hero-wrapper .hero-container .content h1 {
+  font-size: 38px;
+  margin: 0;
+}
+#hero .hero-wrapper .hero-container .content .content-flex {
+  display: flex;
+  align-items: center;
+}
+#hero .hero-wrapper .hero-container .content .content-flex button {
+  height: 40px;
+  border-radius: 6px;
+  margin-left: 32px;
+  background-color: var(--secondary-color);
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+#hero .hero-wrapper .hero-container .content .content-flex button {
+  padding: 12px;
+  color: white;
+}
+
+#hero .hero-wrapper .hero-container .content .content-flex button:hover {
+  background-color: var(--neutral-color);
+  color: var(--secondary-color);
+}
+
+#hero .hero-wrapper .hero-container:last-child {
+  background-image: url(./petra4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  background-position: center;
+}
+/* ---------------------⬆⬆ HERO SECTION ⬆⬆--------------------- */
+
+/* ---------------------⬇⬇ PORTFOLIO SECTION ⬇⬇--------------------- */
+#portfolio {
+  position: relative;
+}
+
+#portfolio .portfolio-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#portfolio .portfolio-wrapper .portfolio-container {
+  position: relative;
+  margin-top: 32px;
+}
+
+#portfolio .portfolio-wrapper .portfolio-container:first-child {
+  position: relative;
+  border-radius: 6px;
+  flex-basis: 40%;
+  margin-right: 8px;
+}
+#portfolio .portfolio-wrapper .portfolio-container:last-child {
+  border-radius: 6px;
+  flex-basis: 60%;
+  margin-left: 8px;
+}
+#portfolio .portfolio-wrapper .portfolio-container .content {
+  margin: 2rem;
+  margin-top: 0;
+  overflow: hidden;
+}
+#portfolio .portfolio-wrapper .portfolio-container .portfolio-content {
+  width: 100%;
+}
+#portfolio
+  .portfolio-wrapper
+  .portfolio-container
+  .portfolio-content
+  .portfolio-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#portfolio
+  .portfolio-wrapper
+  .portfolio-container
+  .portfolio-content
+  .portfolio-list
+  li {
+  margin: 16px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid black;
+  font-size: 24px;
+}
+#portfolio
+  .portfolio-wrapper
+  .portfolio-container
+  .portfolio-content
+  .portfolio-list
+  li
+  span {
+  float: right;
+  transform: rotate(-45deg);
+  margin-right: 0.5rem;
+}
+
+#portfolio
+  .portfolio-wrapper
+  .portfolio-container
+  .portfolio-content
+  .portfolio-list
+  li
+  span:hover {
+  transform: rotate(0deg);
+  color: var(--body-color);
+}
+
+/* ---------------------⬆⬆ PORTFOLIO SECTION ⬆⬆--------------------- */
+
+/* ---------------------⬇⬇ SKILLS SECTION ⬇⬇--------------------- */
+#skills {
+  position: relative;
+}
+
+#skills .skills-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#skills .skills-wrapper .skills-container {
+  position: relative;
+  margin-top: 32px;
+}
+
+#skills .skills-wrapper .skills-container:first-child {
+  position: relative;
+  border-radius: 6px;
+  flex-basis: 40%;
+  margin-right: 8px;
+}
+#skills .skills-wrapper .skills-container:last-child {
+  border-radius: 6px;
+  flex-basis: 60%;
+  margin-left: 8px;
+  height: 400px;
+}
+#skills .skills-wrapper .skills-container .content {
+  margin: 2rem;
+  margin-top: 0;
+  overflow: hidden;
+}
+#skills .skills-wrapper .skills-container .skills-content {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 72px 72px 72px 72px;
+  margin: 0 auto;
+  grid-gap: 32px;
+  place-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+#skills .skills-wrapper .skills-container .skills-content .icon {
+  margin: 1.5rem;
+  width: 70%;
+  text-align: center;
+  place-items: center;
+}
+#skills .skills-wrapper .skills-container .skills-content .fa {
+  font-size: 64px;
+}
+#skills .skills-wrapper .skills-container .skills-content .png-icon {
+  width: 64px;
+  filter: grayscale(100%);
+}
+#skills .skills-wrapper .skills-container .skills-content .png-icon:hover {
+  filter: grayscale(0%);
+}
+/* ---------------------⬆⬆ SKILLS SECTION ⬆⬆--------------------- */
+
+/* ---------------------⬇⬇ HOBBIES SECTION ⬇⬇--------------------- */
+#hobbies {
+  position: relative;
+}
+#hobbies .hobbies-wrapper {
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#hobbies .hobbies-wrapper .hobbies-container {
+  position: relative;
+  height: 480px;
+}
+#hobbies .hobbies-wrapper .hobbies-container:first-child {
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 32px;
+  height: 32px;
+}
+#hobbies .hobbies-wrapper .hobbies-container:last-child {
+  margin-top: 64px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+}
+
+#hobbies .hobbies-wrapper .hobbies-container .content {
+  position: absolute;
+  top: 0;
+  margin: 2rem;
+  overflow: hidden;
+}
+#hobbies .hobbies-wrapper .hobbies-container .content h1 {
+  position: relative;
+}
+#hobbies .hobbies-wrapper .hobbies-container .hobbies-content {
+  position: relative;
+  width: 100%;
+  margin: 8px;
+  overflow: hidden;
+  height: 500 px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#hobbies .hobbies-wrapper .hobbies-container .hobbies-content:nth-child(1) {
+  margin-left: 0;
+  margin-right: 16px;
+}
+#hobbies .hobbies-wrapper .hobbies-container .hobbies-content:nth-child(3) {
+  margin-right: 0;
+  margin-left: 16px;
+}
+#hobbies .hobbies-wrapper .hobbies-container .hobbies-content .img-hobby {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+}
+
+#hobbies .hobbies-wrapper .hobbies-container .hobbies-content .hobby-title {
+  transform: translateY(100%);
+  background-color: transparent;
+  height: 40%;
+  transition: 500ms;
+}
+
+#hobbies
+  .hobbies-wrapper
+  .hobbies-container
+  .hobbies-content:hover
+  .hobby-title {
+  transform: translateY(0%);
+  background-color: var(--primary-color);
+  transition: 500ms;
+}
+
+#hobbies .hobbies-wrapper .hobbies-container .hobbies-content h1 {
+  text-align: left;
+  margin: 16px;
+  justify-content: space-between;
+}
+/* ---------------------⬆⬆ HOBBIES SECTION ⬆⬆--------------------- */
+
+/* ---------------------⬇⬇ FOOTER SECTION ⬇⬇--------------------- */
+#footer {
+  position: relative;
+}
+
+#footer .footer-wrapper {
+  position: relative;
+}
+#footer .footer-wrapper .footer-container {
+  position: relative;
+  height: 400px;
+  padding: 24px;
+  margin: 32px 0;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+}
+#footer .footer-wrapper .footer-container {
+  position: relative;
+}
+#footer .footer-wrapper .footer-container .footer-content-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 32px;
+}
+#footer .footer-wrapper .footer-container .footer-content-container h1 {
+  margin: 0 64px;
+  font-size: 4rem;
+}
+#footer .footer-wrapper .footer-container .footer-content-container button {
+  margin: 0 64px;
+  cursor: pointer;
+}
+#footer
+  .footer-wrapper
+  .footer-container
+  .footer-content-container
+  .footer-container-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  align-items: center;
+}
+
+#footer
+  .footer-wrapper
+  .footer-container
+  .footer-content-container
+  .footer-container-flex
+  button {
+  width: 200px;
+  height: 80px;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  border-radius: 6px;
+  justify-content: flex-end;
+}
+#footer
+  .footer-wrapper
+  .footer-container
+  .footer-content-container
+  .footer-container-flex
+  button
+  span {
+  font-size: 16px;
+  padding: 0;
+  border: none;
+}
+
+#footer
+  .footer-wrapper
+  .footer-container
+  .footer-content-container
+  .footer-container-flex
+  button:hover {
+  background-color: var(--neutral-color);
+  border: none;
+  color: var(--secondary-color);
+}
+
+#footer .footer-wrapper .footer-container:last-child {
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#footer .footer-wrapper .footer-container:last-child h1 {
+  margin-left: 16px;
+}
+#footer .footer-wrapper .footer-container:last-child .contact-icon {
+  position: relative;
+  font-size: 32px;
+  justify-content: center;
+}
+
+#footer .footer-wrapper .footer-container:last-child .contact-icon i {
+  margin: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+#footer .footer-wrapper .footer-container:last-child .contact-icon i:hover {
+  transform: scale(1.3);
+}
+/* ---------------------⬆⬆ FOOTER SECTION ⬆⬆--------------------- */
